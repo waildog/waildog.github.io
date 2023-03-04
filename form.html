@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <div id="wrapper">
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/challenge.html">Challenge</a></li>
+            <li><a href="#">Recipe</a></li>
+            <li><a href="/form.html">Form</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Reserve Your Room</h1>
+        <h2>Our reservation policies:</h2>
+    </header>
+
+    <section class="policies">
+        <ul>
+            <li>Check-in time after 3:00pm on</li>
+            <li>Check-out time by 11:00am or charges are incurred</li>
+            <li>Breakfast and afternoon tea/snacks included in cost</li>
+            <li>Proof of COVID-19 Vaccination required. Upload image(s) below</li>
+            <li>50% deposit required at booking</li>
+            <li>Cancellations less than 72 hours ahead of check-in forfeit 50% of deposit</li>
+        </ul>
+    </section>
+
+    <section class="reserve">
+        <form method="post" name="reservation" data-netlify="true">
+
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Enter your first name" required>
+            </div>
+
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter your last name" required>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" required>
+            </div>
+                
+            <div>
+                <label for="start">Check-in Date:</label>
+                <input type="date" id="start" name="check-in" required>
+            </div>
+
+            <div>
+                <label for="end">Check-out Date:</label>
+                <input type="date" id="end" name="check-out" required>
+            </div>
+
+            <div>
+                <label for="guests">Number of Guests (4 is maximum)</label>
+                <input type="number" id="guests" name="guests" min="0" max="4" required>
+            </div>
+
+            <div>
+                <label for="roomType">Room Type</label>
+                <select name="roomType" id="roomType" required>
+                    <option selected disabled hidden>Choose One</option>
+                    <option>King</option>
+                    <option>Queen</option>
+                    <option>Twin</option>
+                </select>
+            </div>
+
+            <div>
+                <div>Ocean View (additional cost)</div>
+                <label for="view">Yes</label>
+                <input type="radio" name="view" id="yes" value="yes" required>
+
+                <label for="view">No</label>
+                <input type="radio" name="view" id="no" value="no">
+            </div>
+
+            <div>
+                <label>List Allergies or Other Requests</label>
+                <textarea></textarea>
+            </div>
+
+            <div>
+                <label>Upload Vaccine Proof</label>
+                <input type="file">
+            </div>
+
+            <div>
+                <label>I agree to all the terms listed above.</label>
+                <input type="checkbox" required>     
+            </div>
+
+            <div>
+                <label for="pass">Create a password to return. Username is your email.</label>
+                <input type="password" name="pass" id="pass" required>
+            </div>
+
+            <div>
+                <input type="submit">
+            </div>
+
+            <div>
+                <input type="reset">
+            </div>
+
+        </form>
+    </section>
+
+    </div>
+
+    <footer>
+        <br>&copy; 2023 The Inn at Snowy River<br>
+        Stowe, VT
+    </footer>
+
+</body>
+
+</html>

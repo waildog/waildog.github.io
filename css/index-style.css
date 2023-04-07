@@ -1,3 +1,11 @@
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #333;
+}
+
 ul {
     list-style-type: "\1F431";
 }

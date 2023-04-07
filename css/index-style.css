@@ -1,3 +1,7 @@
 ul {
     list-style-type: "\1F431";
 }
+
+h1, h2 {
+    color: #E5BA73;
+}

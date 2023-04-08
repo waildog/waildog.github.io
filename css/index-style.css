@@ -3,14 +3,33 @@ p {
     font-size: 16px;
     font-weight: normal;
     line-height: 1.5;
+    letter-spacing: 0.05em;
     color: #333;
+    text-align: center;
+}
+
+.cat {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 ul {
     list-style-type: "\1F431";
 }
 
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
 h1, h2 {
-    color: #C58940;
+    color: #F7D08A;
     font-weight: bold;
+    text-decoration: underline wavy #E5890A;
+}
+
+footer {
+    font-style: italic;
 }

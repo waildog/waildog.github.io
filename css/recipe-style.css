@@ -1,0 +1,149 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    line-height: 125%;
+    color: #50504F;
+  }
+
+* ,
+* ::before ,
+* ::after {
+    box-sizing: inherit;
+}
+
+nav {
+    background-color: #c98226;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    padding: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:link,
+nav a:visited {
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:active {
+    background-color: #fcd59c;
+    color: #50504F;
+    text-decoration: underline;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+}
+
+h1, 
+h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 6% 0;
+    text-align: center;
+    text-shadow: 3px 5px 3px #ccc;
+}
+
+header {
+    margin: 10%;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 5px 5px 3px #ccc;
+    float: left;
+    margin-right: 10%;
+    margin-left: 10%;
+    max-width: 30%;
+    shape-outside: circle(50%);
+}
+
+.rate {
+    clear: both;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.emoji::after {
+    content: "\1f370";
+}
+
+.details,
+.ingredients,
+.instructions,
+.nutrition {
+    width: 40%;
+    float: left;
+}
+
+.details, 
+.instructions {
+    margin-right: 16%;
+    margin-left: 2%;
+}
+
+blockquote {
+    background-color: #fcd59c;
+    border-radius: 50%;
+    clear: both;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    height: 280px;
+    margin: auto;
+    margin-bottom: 1rem;
+    outline: dotted 6px #c98226;
+    padding: 80px 16px 0 35px;
+    width: 300px;
+}
+
+blockquote small {
+    text-align: right;
+    margin-left: 40%;
+}
+
+footer {
+    background-color: #c98226;
+    color: white;
+    padding: 2% 0;
+    margin-top: 10px;
+}
+
+footer a {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none; 
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+.col1,
+.col2,
+.col3 {
+    display: block;
+    float: left;
+    width: 33%;
+}
+
+footer p {
+    clear: both;
+}

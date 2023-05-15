@@ -30,12 +30,10 @@ h3 {
 
 nav a:link,
 nav a:visited {
-    color: #333;
     text-decoration: none;
   }
   
 nav a:hover {
-    color: #0077cc;
     text-decoration: underline;
   }
   

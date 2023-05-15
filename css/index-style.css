@@ -1,18 +1,40 @@
 p {
+    color: #333;
     font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: normal;
-    line-height: 1.5;
+    right: 25px;
     letter-spacing: 0.05em;
+    line-height: 1.5rem;
+    position: absolute;
+}
+
+a {
+    background-color:#F7D08A;
+    border-radius: 8px;
     color: #333;
-    text-align: center;
+    margin: 5px;
+    padding: 0.2%;
+}
+
+a:hover {
+    background-color: #333;
+    color: #F7D08A;
+    transition: all 0.35s;
 }
 
 .cat {
     display: block;
+    position: sticky;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    top: 0;
+    width: 25%;
+}
+
+.cat:hover {
+    transform:scale(125%);
+    transition: 0.5s;
 }
 
 ul {
@@ -22,6 +44,8 @@ ul {
 h1 {
     text-align: center;
     text-transform: uppercase;
+    position: relative;
+    bottom: 40px;
 }
 
 h1, h2 {

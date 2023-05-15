@@ -53,7 +53,7 @@ h2 {
 }
 
 h1 {
-    font-size: 1.7rem;
+    font-size: 2.05rem;
     margin: 6% 0;
     text-align: center;
     text-shadow: 3px 5px 3px #ccc;
@@ -148,7 +148,18 @@ footer p {
     clear: both;
 }
 
-@media (max-width: 565px) {
+@media (max-width: 810px) {
+    
+    footer {
+        padding-right: 10%;
+    }
+
+    footer p {
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 360px) {
     html {
         line-height: 135%;
     }
@@ -194,11 +205,18 @@ footer p {
     float: none;
     }
 
-    footer {
-        padding-right: 10%;
+    .col1,
+    .col2,
+    .col3 {
+        display: block;
+        float: none;
+        width: 90%;
+        text-align: center;
     }
 
-    footer p {
-        padding-left: 10%;
+    blockquote {
+        margin-top: 20px;
     }
+
 }
+

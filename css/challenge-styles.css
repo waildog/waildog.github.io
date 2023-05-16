@@ -1,15 +1,30 @@
+:root {
+  --font-size: 1rem;
+  --orange: #ff6600;
+  --red: #bb1b47;
+  --font: Georgia, 'Times New Roman', Times, serif;
+}
+
 html {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.5;
 }
 
-h1, h2, h3 {
-    color: #bb1b47;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+h2, h3 {
+  background-image: linear-gradient(60deg, var(--orange), rgb(238, 255, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--font);
 }
 
 h1 {
+    background-image: linear-gradient(60deg, var(--red), var(--orange));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--font);
     font-size: 3.5rem;
     font-weight: normal;
     letter-spacing: 0.1rem;
@@ -17,15 +32,15 @@ h1 {
   }
   
 h2 {
-    font-size: 2rem;
+    font-size: calc(var(--font-size) * 2); /*2rem; */
   }
   
 h3 {
-    font-size: 1.5rem;
+    font-size: calc(var(--font-size) * 150%); /* 1.5rem; */
   }
 
 .site-intro {
-    font-size: 1.25rem;
+    font-size: calc(var(--font-size) + 0.25rem); /* 1.25rem; */
   }
 
 nav a:link,
@@ -39,6 +54,6 @@ nav a:hover {
   
 nav a:active,
 nav a:focus {
-    color: #ff6600;
-    text-decoration: underline;
+    color: var(--orange);
+    text-decoration: none;
   }
